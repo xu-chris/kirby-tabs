@@ -15,6 +15,12 @@ Every tab (section) can have it's own title and icon.
 3. An example blueprint will be installed ```\site\blueprints\tab-example.php```.
 4. See the blueprint for a detailed set-up, or check out the code below.
 
+You can add an icon to every tab - check out the Font Awesome cheatsheet for all available icons.
+
+http://fortawesome.github.io/Font-Awesome/cheatsheet/
+
+Simply enter the icons-class-name (without ```fa-```) in the blueprint (```fa-diamond``` will become ```diamond```).
+
 ***
 
 ####Demo blueprint code
@@ -22,7 +28,9 @@ Every tab (section) can have it's own title and icon.
 ```
 fields:
 
-  sectionSlider:
+###################################################
+
+sectionSlider:
     label: Slider
     id: slider
     type: tab
@@ -35,6 +43,8 @@ fields:
   text_slider:
     label: Text
     type: text
+
+###################################################
 
   sectionFeatures:
     label: Features
@@ -49,7 +59,9 @@ fields:
   text_features:
     label: Text
     type: text
-    
+
+###################################################    
+
   sectionWorkflow:
     label: Workflow
     id: workflow
