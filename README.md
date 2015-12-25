@@ -2,7 +2,7 @@
 
 **Version 0.0.1 / December, 25th 2015 - intial public offering.**
 
-Divide the back-end of your Kirby CMS into tabs (sections).
+Divide the back-end of your Kirby 2.2 (or higher) CMS into tabs (sections).
 
 Every tab (section) can have it's own title and icon.
 
