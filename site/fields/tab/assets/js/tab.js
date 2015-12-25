@@ -3,24 +3,10 @@ if(typeof activeTab === 'undefined')
 activeTab = 1;
   }
 
-$(document).ajaxSuccess(function()
-  {
-// if($('.message-content').length)
-  {
-// set_tabs();
-  }
-  });
-
 $.fn.tabfield = function()
   {
 set_tabs();
   }
-
-$(function()
-  {
-// set_tabs();
-// setTimeout(function(){set_tabs();},500);
-  });
 
 function set_tabs()
   {
