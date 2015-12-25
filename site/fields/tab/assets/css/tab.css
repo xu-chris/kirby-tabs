@@ -1,0 +1,41 @@
+.tab-nav {
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+	list-style: none;
+	border-bottom: 2px solid #ddd;
+	overflow: hidden;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.tab-nav li {
+	position: relative;
+	display: inline-block;
+	padding: .75em 1.5em 1em;
+	margin-right: 1px;
+	bottom: -.25em;
+	background: #fbfbfb;
+	cursor: pointer;
+}
+
+.tab-nav li:first-child {
+	border-radius: 3px 0 0 0 ;
+}
+
+.tab-nav li:last-child {
+	border-radius: 0 3px 0 0;
+}
+
+.tab-nav li:hover, .tab-nav li:focus {
+	background: #fff;
+	outline: none;
+}
+
+.tab-nav li.active {
+	bottom: 0;
+	padding-top: 1em;
+	z-index: 9;
+
+	background: #fff;
+	border-radius: 3px 3px 0 0;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
