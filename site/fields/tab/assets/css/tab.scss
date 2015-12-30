@@ -1,0 +1,68 @@
+/* basic-setup */
+
+.tab-nav {
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+	list-style: none;
+	border-bottom: 2px solid #ddd;
+	overflow: hidden;
+  position: relative;
+  top: -3px;
+  background: #EFEFEF;
+  z-index: 10;
+  @media screen and (min-height: 700px) {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: sticky;
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+    padding: 1em 1.5em 1em;
+    margin-right: 1px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px 3px 0 0;
+
+    &:hover, &:focus {
+      outline: none;
+    }
+
+    &:focus {
+      background: #fff;
+    }
+
+    &:hover {
+      background: #fff;
+    }
+
+    &.active {
+
+      background: #000;
+      color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+    }
+  }
+  .fa {
+    color: #bbb;
+    display: inline-block;
+    margin: 0 6px 0 0;
+  }
+}
+
+.tab {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  max-height: 0;
+
+  &.active.fired {
+    opacity: 1;
+    display: block;
+    max-height: 1000000px !important;
+  }
+
+  &.fired {
+    display: none;
+  }
+}
