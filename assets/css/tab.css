@@ -17,10 +17,11 @@
   .tab-nav li {
     position: relative;
     display: inline-block;
-    padding: 1em 1.5em 1em;
+    padding: .75em 1.5em .75em;
     margin-right: 1px;
     font-size: 14px;
     cursor: pointer;
+    z-index: 15;
     border-radius: 3px 3px 0 0; }
     .tab-nav li:hover, .tab-nav li:focus {
       outline: none; }
@@ -29,9 +30,11 @@
     .tab-nav li:hover {
       background: #fff; }
     .tab-nav li.active {
-      background: #000;
+      background: #8DAE27;
       color: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+      .tab-nav li.active .fa:before {
+        color: white; }
   .tab-nav .fa {
     color: #bbb;
     display: inline-block;
