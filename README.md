@@ -30,7 +30,7 @@ fields:
 
 ###################################################
 
-sectionSlider:
+  sectionSlider:
     label: Slider
     id: slider
     type: tab
